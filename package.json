@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/diptiprasadsarangi01/RetroRiotes-Game-Hub.git",
+  "homepage": "https://diptiprasadsarangi01.github.io/retroriotes-games/",
   "name": "retroriotes",
   "private": true,
   "version": "0.0.0",
@@ -9,6 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
