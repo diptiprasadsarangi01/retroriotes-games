@@ -1,0 +1,203 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "pricedown";
+  src: url("./renegentlaser.ttf");
+}
+
+
+
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "pricedown";
+  font-weight: 400;
+  font-style: normal;
+  background: #000000;
+}
+
+/* p{
+
+
+} */
+
+
+@media screen and (min-width: 601px) {
+
+  .character{
+    top:35%;
+    scale:1;
+  }
+
+}
+@media screen and (min-width: 701px) {
+
+  .character{
+    top:25%;
+    scale:1;
+  }
+
+}
+
+@media screen and (min-width: 2557px) {
+
+  .character{
+    scale: 1.2;
+    top: 35%;
+  }
+
+}
+
+
+@media screen and (max-height: 700px) {
+
+  .character{
+    scale: 0.9;
+    top: 1%;
+  }
+}
+@media screen and (max-width: 600px) {
+
+  .character{
+    scale: 1.1;
+    top: 45%;
+  }
+  .playsoon-text{
+    display: none;
+  }
+  .about-section{
+    text-align: center;
+  }
+
+}
+@media screen and (max-width: 690px) {
+
+  .character{
+    scale: 1.1;
+    top: 40%;
+  }
+}
+@media screen and (max-width: 450px) {
+
+  .character{
+    scale: 1.2;
+    top: 55%;
+  }
+}
+
+
+
+.group{
+  transition: all 0.3s ;
+  
+}
+
+@keyframes  shake 
+{
+  0% { transform: translate(2px, 1px) rotate(0deg); }
+  50% { transform: translate(-1px, -2px) rotate(-1deg); }
+  100% { transform: translate(-3px, 0px) rotate(1deg); }
+}
+
+
+
+
+.group:hover {
+    filter: drop-shadow(0 0 8px #ffbf8eb0) ;
+    animation: shake 0.2s ; 
+}
+.neon-frame {
+  min-width: 308px;
+  max-width: 350px;
+  height: 450px;
+  background: linear-gradient(to bottom, #fe8d00, #ff6524, #dc4745); 
+  clip-path: polygon(
+    5% 0%, 95% 0%,
+    100% 5%, 100% 95%,
+    95% 100%, 
+    70% 100%, 65% 95%, 35% 95%, 30% 100%,
+    5% 100%,
+    0% 95%, 0% 5%
+  );
+  border: 2px solid #fe8d00;
+
+
+}
+
+
+
+.neon-frame-inner{
+ position: absolute;  
+  min-width: 304px;
+  max-width: 350px;
+  height: 446px;
+  background: linear-gradient(to bottom, #01041f, #010015 );
+  clip-path: inherit;
+  display: flex;
+  font-weight: 200;
+  font-size: x-large;
+  text-transform: capitalize;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  justify-content: center;
+  align-items: center;
+  
+ 
+}
+.neon-frame-bg-image {
+  position: absolute;
+  min-width: 304px;
+  max-width: 350px;
+  height: inherit;
+  background-size: cover;
+  background-position: center;
+  clip-path: inherit;
+}
+
+
+
+
+
+/* Cyan trapezium top box with glow */
+.neon-header {
+  width: 220px;
+  height: 50px;
+  background: #3b99c4;
+  /* clip-path: polygon(90% 100%, 10% 100%,0% 0%, 100% 0%); */
+  
+  clip-path: polygon(
+    0% 0%,       /* Top-left */
+    100% 0%,     /* Top-right */
+    96% 80%,    /* Right vertical drop */
+    90% 100%,    /* Bottom-right inner angle */
+    10% 100%,    /* Bottom-left inner angle */
+    4% 80%       /* Left vertical rise */
+  );
+  border: 2px solid #3b99c4;
+  box-shadow: 0 0 10px #3b99c4;
+  z-index: 10;
+}
+
+.neon-header-inner {
+  position: absolute;
+  left: 0.5px;
+  width: 215px;
+  height: 46px;
+  background: linear-gradient(to bottom, #01083d, #010015 );
+  clip-path: inherit;
+  font-size: large;
+  text-transform: capitalize;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+
+
