@@ -120,7 +120,7 @@ function Header() {
               />
 
               <img
-                className="absolute bg scale-[1.3] sm:scale-[1.8] rotate-[-30deg] top-0 left-0 w-full h-full object-bottom object-cover"
+                className="absolute bg scale-[1.4] sm:scale-[1.8] rotate-[-30deg] top-0 left-0 w-full h-full object-bottom object-cover"
                 src="./bg.png"
                 alt="bg"
               />
