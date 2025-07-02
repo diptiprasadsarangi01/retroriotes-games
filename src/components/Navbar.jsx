@@ -15,7 +15,7 @@ function Navbar() {
             alt="logo"
           />
         </div>
-        <h3 className=" items-center text-3xl hidden sm:flex align-center sm:text-2xl md:text-3xl xl:text-[2.50rem] 2xl:text-5xl text-amber-400 text-shadow-md text-shadow-black">
+        <h3 className=" items-center text-3xl hidden sm:flex align-center sm:text-2xl md:text-3xl xl:text-[2.50rem] 2xl:text-5xl text-amber-400 text-shadow-lg text-shadow-gray-900">
           RetroRiotes
         </h3>
       </div>
